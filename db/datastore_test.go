@@ -29,7 +29,7 @@ func TestReadActors(t *testing.T) {
 
 func TestReadActorsError(t *testing.T) {
 
-	expected := "open ../test-data1/actors.csv: no such file or directory"
+	expected := "open ../data/test-data1/actors.csv: no such file or directory"
 
 	path := "../data/test-data1"
 	_, err := readActors(path)
@@ -61,7 +61,7 @@ func TestReadCommits(t *testing.T) {
 
 func TestReadCommitsError(t *testing.T) {
 
-	expected := "open ../test-data1/commits.csv: no such file or directory"
+	expected := "open ../data/test-data1/commits.csv: no such file or directory"
 
 	path := "../data/test-data1"
 	_, err := readCommits(path)
@@ -95,7 +95,7 @@ func TestReadEvents(t *testing.T) {
 
 func TestReadEventsError(t *testing.T) {
 
-	expected := "open ../test-data1/events.csv: no such file or directory"
+	expected := "open ../data/test-data1/events.csv: no such file or directory"
 
 	path := "../data/test-data1"
 	_, err := readEvents(path)
@@ -125,7 +125,7 @@ func TestReadRepos(t *testing.T) {
 
 func TestReadReposError(t *testing.T) {
 
-	expected := "open ../test-data1/repos.csv: no such file or directory"
+	expected := "open ../data/test-data1/repos.csv: no such file or directory"
 
 	path := "../data/test-data1"
 	_, err := readRepos(path)
