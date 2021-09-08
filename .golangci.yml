@@ -1,0 +1,20 @@
+run:
+  timeout: 5m
+  tests: false
+  skip-dirs:
+    - vendor
+    - test-data
+linters:
+  disable-all: true
+  enable:
+    - gofmt
+    - golint
+    - goimports
+  fast: false
+linters-settings:
+  gofmt:
+    simplify: false
+  gci:
+    local-prefixes: github.com/ameykpatil/github-data-analyzer
+issues:
+  exclude-use-default: false

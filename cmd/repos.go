@@ -42,7 +42,7 @@ func getTopRepos(cmd *cobra.Command, args []string) error {
 	}
 
 	// create sort function based on sort field
-	fn := func(ri, rj repo.Repo) bool { return true }
+	var fn func(ri, rj repo.Repo) bool
 	switch sortField {
 	case "Commits":
 		fn = func(ri, rj repo.Repo) bool {
