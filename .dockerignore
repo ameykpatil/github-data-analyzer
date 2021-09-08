@@ -1,0 +1,6 @@
+.git
+.gitignore
+github-data-analyzer
+README.md
+data/
+vendor/
